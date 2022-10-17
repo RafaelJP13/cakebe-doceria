@@ -15,7 +15,7 @@ a {
   position: fixed;
   height: 100%;
   width: 300px;
-  background-color: #006599;
+  background-color: #51e612;
   padding-top: 40px;
 }
 
@@ -30,7 +30,7 @@ a {
 #sidebar a {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #sidebar a:hover {
@@ -55,4 +55,99 @@ a {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Content */
+.content {
+  position: absolute;
+  left: 300px;
+  width: calc(100% - 300px);
+}
+
+.content h1,
+h2 {
+  color: #14b5fe;
+  margin-bottom: 30px;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content h2 {
+  font-size: 35px;
+}
+
+section {
+  padding-left: 50px;
+}
+
+/* Sessão Bem vindo */
+
+#sessao-bemvindo {
+  padding-left: 0;
+}
+
+.sessao-bemvindo-content {
+  padding-left: 50px;
+}
+
+#sessao-bemvindo .banner {
+  height: 500px;
+  background-image: url("../img/banner2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#sessao-bemvindo h1 {
+  margin-top: 60px;
+}
+
+#sessao-bemvindo::after,
+#sessao-sobre::after {
+  content: "";
+  display: block;
+  clear: both;
+  margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+  width: 300px;
+  height: 400px;
+  background-image: url("../img/banner3.jpg");
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.sessao-descricao {
+  position: absolute;
+  left: 370px;
+  padding-right: 30px;
+}
+
+.sessao-descricao p {
+  line-height: 2;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.sessao-bemvindo-btn,
+form input[type="submit"] {
+  background-color: #006599;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 40px;
+  transition: 0.5s;
+  display: block;
+  width: 100px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-left: 25px;
+}
+.sessao-bemvindo-btn:hover,
+form input[type="submit"]:hover {
+  background-color: #2790c6;
 }
